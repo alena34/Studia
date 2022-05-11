@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="descrition" content="Моя первая веб-страница" />
+        <meta name="keywords" content="Студия" />
+        <meta name="autor" content="Алена" />
+
+        <title>Studia</title>
+        <link rel="icon" href="images/hairdresser.png" type="imade/x-icon" />
+        <link rel="stylesheet" href="css/style.css"<link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com"crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="https://use.fontawesome.com/767155eaee.js"></script>
+	    <script src="js/scripts.js"></script>
+
+    </head>
+      
+        <body onload="getYear()">
+
+        <header>
+            <div class="cantainer-logo col-2">
+                 <img class="img-header" src="images/aroma--v2.png"/>
+            </div>
+           
+            <nav class="nav" id="myNav" style="text-align: left;"> 
+               <style>
+                    .a { 
+                     margin-right: 5%; /* Отступ справа */
+                     margin-left: -10%; /* Отступ слева */
+                    }
+                   </style>
+                <a href="#" onclick="Menu()"><Menu></a>
+                <a href="pages/cosmetologia.html" onclick="hideMenu()"><i class="fas regular fa-avocado"></i><center>Косметология</a>
+                <a href="pages/maniciur.html"onclick="hideMenu()"><i class="fa fa-avocado"></i>Маникюр</a> 
+                <a href="pages/pediciur.html"onclick="hideMenu()"><i class="fa fa-citrus-slice"></i>Педикюр</a>
+                <a href="pages/parihmaher.html"onclick="hideMenu()"><i class="fa fa-scissors"></i>Парикмахерские услуги</a> 
+                <a href="pages/permanent.html"onclick="hideMenu()"><i class="fa fa-wand-magic-sparkles"></i>Перманентный макияж</a>
+                <a href="pages/praislist.html"onclick="hideMenu()"><i class="fa fa-image-polaroid"></i>Прайс-лист</a>
+                <a href="pages/contacte.html"onclick="hideMenu()"><i class="fa fa-address-book"></i>Контакты</a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()"><i class="fa fa-bars"></i></a>
+                
+             </nav>
+        </header>
+           
+            <main class="cosmet">
+                
+                <div class="conteiner-index">
+                    <h3 class="nume-salon">💫Studia DESSANGE</h3>
+                </div>
+                
+                   <!--slider-->
+
+                <div class="slideshow-container">
+                    <div class="slide anim">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/fotoslaider2.jpg">
+                        <div class="text">Рады Вас приветствовать... </div>
+                    </div>
+                    <div class="slide anim">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/fotoslaider3.jpg">
+                        
+                    </div>
+                    <div class="slide anim">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/fotoslaider1.jpg">
+                        
+                    </div>
+                    <div class="slide anim">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/fotoslaider5.jpg">
+                        
+                    </div>
+                    <div class="slide anim">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/fotoslaider4.jpg">
+                        
+                    </div>
+                    <div class="slide anim">
+                        <div class="numbertext">6 / 6</div>
+                        <div class="orar">
+                            <h4>Наш график работы:</h4>
+                            <h3>Понедельник - Пятница:</h3>
+                            <h3>9:00-20:00</h3>
+                            <h3>Суббота - Воскресенье:</h3>
+                            <h3>10:00-20:00</h3>
+                        </div>
+                    </div>
+                </div>
+                        <p>Профессиональные мастера постоянно обучаются в Парижской школе Жака Дессанжа и используют последние технологии по
+                        стрижке волос, окрашевание, уходом за волосами, косметические процедуры для ухода за кожей и волосами, косметические
+                        продукты и услуги по уходу за руками и ногами. 
+
+                        </p>
+                        <p>Наши специалисты понимают, что каждая женщина уникальна и роль парикмахера-стилиста заключается в том, чтобы, избегая
+                            банальность, подчеркнуть ее красоту и достичь совершенства в создание ее образа. Создать общность стиля и мышления
+                            мастеров позволяет уникальна программа профессиональной подготовки, предоставленная частной школой Жака Дессанжа в
+                            Париже. Все лучшее что появляется там, моментально становится доступным в салоне красоты DESSANGE.
+                        </p>
+            </main>
+      
+            <footer>
+                <h1>💇Salon Studia-2022</h1>
+            </footer>
+         <script src="js/script_slider.js"></script>
+    </body>
+</html>

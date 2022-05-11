@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studia</title>
+        <link rel="icon" href="../images/hairdresser.png" type="imade/x-icon" />
+        <link rel="stylesheet" href="../css/"<link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com"crossorigin>
+        <link rel="stylesheer" href="html://cdnjs.cloudfloare.com/ajax/libs/font-awesome/5.15.2/scc/all.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,600&family=Dancing+Script:wght@400;500&family=Noto+Sans:ital,wght@1,100&family=Sacramento&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+
+</head>
+   
+
+        <main class="cosmet">
+            <div class="conteiner-index">
+                <h1 class="nume-salon">Studia DESSANGE</h1>
+                <a href="../index.html"></a>      
+            </div>
+            <nav>
+                <a href="#" onclick="Menu()"><Menu></a>
+                <a href="../index.html">"Главная страница</a>
+            </nav>
+
+            </div>
+            <div>
+        
+            <h2 class="centered">Контакты</h2>
+                <hr class="linia" />
+                
+                <div class="conteiner-contact">
+                    <div class="col-5 forma-contact">
+                        <h3 class="centered">Оставте сообщение <i class="fas fa-envelope-open"></i></h3>
+                        <form autocomplete="off" id="formular" action="">
+                            <input type="text" placeholder="nume" required id="nume" />
+                            <input type="email" placeholder="email" required id="email" />
+                            <input type="text" placeholder="tema" required id="tema" />
+                            <textarea placeholder="mesaj" rows="7" required id="mesaj"></textarea>
+                            <input type="button" value="Отправить" id="otpraviti" onclick="send()" />
+                        </form>
+                    </div>
+                    <div class="col-5 forma-contact">
+                        <h3 class="centered">Telefon<i class="fas fa-address-card"></i></h3>
+                         <!-- Формы -->
+                        <label> Manager:<input type="text" placeholder="0294-22-5-28" /></label>
+                    </div>
+                    <div class="col-5 forma-contact">
+                        <h3 class="centered">Adres<i class="fas fa-building"></i></h3>
+                        <label> Strada:<input type="text" placeholder="Штефан чел Маре 42/12"/></label> <br>
+                        <label> Email:<input type="text" placeholder="al19801903@mail.ru"/></label>
+                    </div>
+                </div>
+                <script>
+                    emailjs.init("zHS2fNWKpG_UC_XMG");
+                    function send() {
+                        if (document.getElementById("formular").checkValidity()==false) {
+                            document.getElementById("formular").reportValidity();
+                            return;
+                        }
+                        
+                        var date = {
+                            nume: document.getElementById("nume").value,
+                            email: document.getElementById("email").value,
+                            tema: document.getElementById("tema").value,
+                            mesaj: document.getElementById("mesaj").value
+                        };
+                        emailjs.send("service_oy60tal", "template_cuio9fc", date)
+                            .then(function (respons) {
+                             alert("сообщение успешно было отправлено")
+                             document.getElementById("formular").reset();    
+                        }, function(error) {
+                            alert("Ошибка при отправке.")
+                        })
+                        }
+                </script>
+                
+                <div>
+                   <h1>Как нас найти:</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.7132365110765!2d28.67136831539679!3d45.91704291113358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b7b4ddcddd3afd%3A0x7f01292a8b9d2e2e!2z0KLQtdC-0YDQtdGC0LjRh9C10YHQutC40Lkg0LvQuNGG0LXQuSAiSXZhbiBWYXpvdiI!5e0!3m2!1sru!2s!4v1651389265034!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Audio -->
+                    <audio controls autoplay>
+                        <source src="../media/marc.mp3" type="audio/mp3">
+                    </audio>
+                    
+            
+           
+                    
+    </main>
+    
+    
+    <footer>
+        <h1>💇Salon Studia</h1>
+
+    </footer>
+    
+</body>
+</html>
